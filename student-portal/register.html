@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Student</title>
+    <link rel="icon" href="premium_vector-1723137878203-09eea50b2011.avif" type="image/x-icon">
+
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <nav aria-label="primary-navigation">
+        <a href="index.html">Home</a> &nbsp; &nbsp;
+        <a href="register.html">Register</a> &nbsp; &nbsp;
+        <a href="studentportal.html">Student Portal</a> &nbsp; &nbsp;
+        <a href="students.html">Student List</a> &nbsp; &nbsp; 
+        <a href="about.html">About</a> &nbsp; &nbsp;
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Using POST method -->
+    <form action="submit.html" method="post" target="_blank">
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>DOB:</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+        </fieldset>
+<br><br><br>
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label>Department:</label><br>
+            <select name="department">
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>IT</option>
+            </select><br><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="4" cols="30"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
